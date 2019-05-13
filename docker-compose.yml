@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  experiment2_api:
+    image: ${DOCKER_REGISTRY-}experiment2api
+    build:
+      context: .\Experiment2_API
+      dockerfile: Dockerfile
